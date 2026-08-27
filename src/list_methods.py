@@ -1,0 +1,10 @@
+cart = ["pantalon", "camisa"]
+cart.append("zapatos")
+print(cart)
+cart.insert(1, "cinturon")
+print(cart)
+cart.remove("pantalon")
+print(cart)
+print("camisa" in cart)
+cart.sort()
+print(cart)
