@@ -8,7 +8,7 @@ Porque el diagnóstico inicial te permite entender la calidad y estructura de lo
 
 ## ¿Qué pasaría si rellenaras Budget con 0 en vez de eliminar esas filas? ¿Cómo afectaría eso a la columna Ganancia que vas a crear en la próxima etapa?
 
-Si rellenara la columna Budget con 0, por ejemplo, estaría asumiendo que algunas películas no tuvieron ningún costo de producción, lo cual no es realista. Hacer esto crearía datos que no son reales, lo que podría afectar el análisis de estos.
+Si rellenara la columna Budget con 0 estaría asumiendo que algunas películas no tuvieron ningún costo de producción, lo cual no es realista. Hacer esto crearía datos que no son reales, lo que podría afectar el análisis de estos.
 
 ---
 
