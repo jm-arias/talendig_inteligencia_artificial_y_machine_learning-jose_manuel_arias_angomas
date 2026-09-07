@@ -33,7 +33,7 @@ df["AudienceScore"] = df["AudienceScore"].fillna(df["AudienceScore"].median())
 # Para columnas relevantes pero con datos poco significativos, eliminar filas
 df = df.dropna(subset=["WorldGross", "Budget"])
 
-print(df.isnull().sum())
+print("\n\n\nConteo de nulos:\n", df.isnull().sum())
 print("\n\n\nForma:\n", df.shape)
 # PARTE 2
 
@@ -46,7 +46,7 @@ df["Profit"] = df["WorldGross"] - df["Budget"]
 df["Successful"] = df["RottenTomatoes"] >= 60
 
 
-print(df[["Movie", "Profit", "Successful"]].head())
+print("\n\n\nColumnas nuevas:\n", df[["Movie", "Profit", "Successful"]].head())
 print("\n\n\nConteo de películas exitosas y no exitosas:\n", df["Successful"].value_counts())
 # PARTE 3 
 
@@ -72,6 +72,6 @@ print("\n\n\nPromedio de Ganancia por estudio:\n", studio_avg)
 # PARTE 6
 df.to_csv("src/4-proyecto_pipeline_basico/hollywood_clean.csv", index=False)
 df_clean = pd.read_csv("src/4-proyecto_pipeline_basico/hollywood_clean.csv")
-print("\n\n\nForma:\n", df_clean.shape)
-print("\n\n\nValores nulos por columna:\n", df_clean.isnull().sum().sum())
+print("\n\n\nForma del nuevo data set:\n", df_clean.shape)
+print("\n\n\nValores nulos del nuevo data set:\n", df_clean.isnull().sum().sum())
 # PARTE 6
