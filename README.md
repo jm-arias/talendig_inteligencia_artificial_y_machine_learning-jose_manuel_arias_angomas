@@ -42,7 +42,7 @@ Es mejor guardar el resultado en un archivo nuevo para conservar una copia del a
 
 ### Si el dataset tuviera una columna de fechas completas (día, mes y año) en vez de solo el año, ¿qué tendrías que verificar antes de poder ordenar el dataset cronológicamente por esa columna?
 
-Verificar la consistencia y el formato para poder trabajarlos uniformemente. Si algunas fechas estuvieran como texto o en formatos diferentes, primero las convertiría para garantizar que las operaciones arrojen el resultado esperado.
+Verificar la consistencia y el formato para poder trabajarlos uniformemente. Si algunas fechas en formatos diferentes, primero las normalizaría para garantizar que las operaciones arrojen el resultado esperado.
 
 ---
 
